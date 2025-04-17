@@ -1,0 +1,124 @@
+/* styles.css */
+
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', 'Helvetica Neue', Arial, sans-serif;
+    background-color: #FFFFFF;
+    color: #333333;
+    line-height: 1.6;
+    font-size: 16px;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header {
+    background-color: #F7F6F3;
+    padding: 20px 0;
+}
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+nav a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+nav a:hover {
+    color: #A8C3A0;
+}
+.hero {
+    background-color: #F7F6F3;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+.hero h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 18px;
+    color: #666666;
+    margin-bottom: 30px;
+}
+.btn {
+    background-color: #A8C3A0;
+    color: #FFFFFF;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: #8CAF8C;
+}
+.featured-posts {
+    margin: 40px 0;
+}
+.featured-posts h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.posts-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.posts-grid article {
+    background-color: #F7F6F3;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+.posts-grid article:hover {
+    transform: translateY(-5px);
+}
+.posts-grid h4 a {
+    text-decoration: none;
+    color: #333333;
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+}
+.posts-grid p {
+    color: #666666;
+    margin-top: 10px;
+}
+footer {
+    background-color: #F7F6F3;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #666666;
+}
+@media (max-width: 768px) {
+    .posts-grid {
+        grid-template-columns: 1fr;
+    }
+}
